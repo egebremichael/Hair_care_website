@@ -1,0 +1,429 @@
+<html>
+    <head>
+        <title>
+            Planet Curls
+        </title>
+        <link rel="stylesheet" href="style.css"> 
+        <!-- CSS only -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" rel="stylesheet"> 
+        </title>
+    </head>
+    <body onload="myFunction()">
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="80"> Planet Curls</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="ms-auto navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <p class="title2">Here is your Curl ID and some product recommendations specially curated for you</p>
+        <script>
+                //get things from localstorage
+                const hairtype = localStorage.getItem("checkedvalue1")
+                var porosity = localStorage.getItem("checkedvalue2")
+                var density = localStorage.getItem("checkedvalue3")
+                var highlight = localStorage.getItem("checkedvalue4")
+                var fineness = localStorage.getItem("checkedvalue5")
+                var six = localStorage.getItem("checkedvalue6")
+                var need = localStorage.getItem("checkedvalue7")
+
+                if (hairtype === "2a") {
+                    var imageshown1 = "images/2a-shampoo.png"
+                }
+                else if (hairtype === "2b") {
+                    var imageshown1 = "images/2b-shampoo.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown1 = "images/2c-shampoo.png"
+                }
+                else if (hairtype === "3a") {
+                    var imageshown1 = "images/3a-shampoo.png"
+                }
+                else if (hairtype === "3b") {
+                    var imageshown1 = "images/3b-shampoo2.png"
+                }
+                else if (hairtype === "3c") {
+                    var imageshown1 = "images/3c-shampoo2.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown1 = "images/4a-shampoo.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown1 = "images/4b-shampoo.png"
+                }
+                else {
+                    var imageshown1 = "images/4c-shampoo.png"
+                }
+
+                if (hairtype === "2a") {
+                    var imageshown2 = "images/2a-shampoo2.png"
+                }
+                else if (hairtype === "2b") {
+                    var imageshown2 = "images/2b-shampoo2.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown2 = "images/2c-shampoo2.png"
+                }
+                else if (hairtype === "3a") {
+                    var imageshown2 = "images/3a-shampoo2.png"
+                }
+                else if (hairtype === "3b") {
+                    var imageshown2 = "images/3b-shampoo3.png"
+                }
+                else if (hairtype === "3c") {
+                    var imageshown2 = "images/3c-shampoo3.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown2 = "images/4a-shampoo2.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown2 = "images/4b-shampoo2.png"
+                }
+                else {
+                    var imageshown2 = "images/4c-shampoo2.png"
+                }
+
+                if (hairtype === "2b") {
+                    var imageshown3 = "images/2b-shampoo3.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown2 = "images/2c-shampoo3.png"
+                }
+                else if (hairtype === "3a") {
+                    var imageshown3 = "images/3a-shampoo3.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown3 = "images/4a-shampoo3.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown3 = "images/4b-shampoo3.png"
+                }
+                else {
+                    var imageshown3 = "images/4c-shampoo3.png"
+                }
+
+                if (hairtype === "2a") {
+                    var imageshown4 = "images/2a-conditioner.png"
+                }
+                else if (hairtype === "2b") {
+                    var imageshown4 = "images/2b-conditioner.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown4 = "images/2c-conditioner.png"
+                }
+                else if (hairtype === "3a") {
+                    var imageshown4 = "images/3a-conditioner.png"
+                }
+                else if (hairtype === "3b") {
+                    var imageshown4 = "images/3b-conditioner.png"
+                }
+                else if (hairtype === "3c") {
+                    var imageshown4 = "images/3c-conditioner.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown4 = "images/4a-conditioner.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown4 = "images/4b-conditioner.png"
+                }
+                else {
+                    var imageshown4 = "images/4c-conditioner.png"
+                }
+
+                if (hairtype === "2a") {
+                    var imageshown4 = "images/2a-conditioner.png"
+                }
+                else if (hairtype === "2b") {
+                    var imageshown4 = "images/2b-conditioner.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown4 = "images/2c-conditioner.png"
+                }
+                else if (hairtype === "3a") {
+                    var imageshown4 = "images/3a-conditioner.png"
+                }
+                else if (hairtype === "3b") {
+                    var imageshown4 = "images/3b-conditioner.png"
+                }
+                else if (hairtype === "3c") {
+                    var imageshown4 = "images/3c-conditioner.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown4 = "images/4a-conditioner.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown4 = "images/4b-conditioner.png"
+                }
+                else {
+                    var imageshown4 = "images/4c-conditioner.png"
+                }
+
+                if (hairtype === "2a") {
+                    var imageshown5 = "images/2a-conditioner2.png"
+                }
+                else if (hairtype === "2b") {
+                    var imageshown5 = "images/2b-conditioner2.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown5 = "images/2c-conditioner2.png"
+                }
+                else if (hairtype === "3a") {
+                    var imageshown5 = "images/3a-conditioner2.png"
+                }
+                else if (hairtype === "3b") {
+                    var imageshown5 = "images/3b-conditioner2.png"
+                }
+                else if (hairtype === "3c") {
+                    var imageshown5 = "images/3c-conditioner2.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown5 = "images/4a-conditioner2.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown5 = "images/4b-conditioner2.png"
+                }
+                else {
+                    var imageshown5 = "images/4c-conditioner2.png"
+                }
+
+                if (hairtype === "2b") {
+                    var imageshown6 = "images/2b-conditioner3.png"
+                }
+                else if (hairtype === "2c") {
+                    var imageshown6 = "images/2c-conditioner3.png"
+                }
+                else if (hairtype === "3b") {
+                    var imageshown6 = "images/3b-conditioner3.png"
+                }
+                else if (hairtype === "3c") {
+                    var imageshown6 = "images/3c-conditioner3.png"
+                }
+                else if (hairtype === "4a") {
+                    var imageshown6 = "images/4a-conditioner3.png"
+                }
+                else if (hairtype === "4b") {
+                    var imageshown6 = "images/4b-conditioner3.png"
+                }
+                else {
+                    var imageshown6 = "images/4c-conditioner3.png"
+                }
+
+                if (hairtype === "2a" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/2a-low-leave-in.png"
+                }
+                else if (hairtype === "2a" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/2a-norm-leave-in.png"
+                }
+                else if (hairtype === "2a" && porosity === "High Porosity"){
+                    var imageshown7 = "images/2a-high-leave-in.png"
+                }
+
+                else if (hairtype === "2b" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/2b-low-leave-in.png"
+                }
+                else if (hairtype === "2b" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/2b-norm-leave-in.png"
+                }
+                else if (hairtype === "2b" && porosity === "High Porosity"){
+                    var imageshown7 = "images/2b-high-leave-in.png"
+                }
+
+                else if (hairtype === "2c" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/2c-low-leave-in.png"
+                }
+                else if (hairtype === "2c" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/2c-norm-leave-in.png"
+                }
+                else if (hairtype === "2c" && porosity === "High Porosity"){
+                    var imageshown7 = "images/2c-high-leave-in.png"
+                }
+
+                else if (hairtype === "3a" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/3a-low-leave-in.png"
+                }
+                else if (hairtype === "3a" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/3a-norm-leave-in.png"
+                }
+                else if (hairtype === "3a" && porosity === "High Porosity"){
+                    var imageshown7 = "images/3a-high-leave-in.png"
+                }
+
+                else if (hairtype === "3b" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/3b-low-leave-in.png"
+                }
+                else if (hairtype === "3b" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/3b-norm-leave-in.png"
+                }
+                else if (hairtype === "3b" && porosity === "High Porosity"){
+                    var imageshown7 = "images/3b-high-leave-in.png"
+                }
+
+                else if (hairtype === "3c" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/3c-low-leave-in.png"
+                }
+                else if (hairtype === "3c" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/3c-norm-leave-in.png"
+                }
+                else if (hairtype === "3c" && porosity === "High Porosity"){
+                    var imageshown7 = "images/3c-high-leave-in.png"
+                }
+
+                else if (hairtype === "4a" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/4a-low-leave-in.png"
+                }
+                else if (hairtype === "4a" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/4a-norm-leave-in.png"
+                }
+                else if (hairtype === "4a" && porosity === "High Porosity"){
+                    var imageshown7 = "images/4a-high-leave-in.png"
+                }
+
+                else if (hairtype === "4b" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/4b-low-leave-in.png"
+                }
+                else if (hairtype === "4b" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/4b-norm-leave-in.png"
+                }
+                else if (hairtype === "4b" && porosity === "High Porosity"){
+                    var imageshown7 = "images/4b-high-leave-in.png"
+                }
+
+                else if (hairtype === "4c" && porosity === "Low Porosity"){
+                    var imageshown7 = "images/4c-low-leave-in.png"
+                }
+                else if (hairtype === "4c" && porosity === "Normal Porosity"){
+                    var imageshown7 = "images/4c-norm-leave-in.png"
+                }
+                else (hairtype === "4c" && porosity === "High Porosity");{
+                    var imageshown7 = "images/4c-high-leave-in.png"
+                }
+
+
+                
+
+
+
+
+                // do this for everything imageshown2, 3, etc
+                 function myFunction() {   
+                   
+                    document.getElementById('shampoo1').src = imageshown1;
+                    document.getElementById("shampoo1").style.display = "block";
+                    document.getElementById('shampoo2').src = imageshown2;
+                    document.getElementById("shampoo2").style.display = "block";
+                    document.getElementById('shampoo3').src = imageshown3;
+                    document.getElementById("shampoo3").style.display = "block";
+                    document.getElementById("conditioner1").src = imageshown4;
+                    document.getElementById("conditioner1").style.display = "block";
+                    document.getElementById("conditioner2").src = imageshown5;
+                    document.getElementById("conditioner2").style.display = "block";
+                    document.getElementById("conditioner3").src = imageshown6;
+                    document.getElementById("conditioner3").style.display = "block";
+                    document.getElementById("styler1").src = imageshown7;
+                    document.getElementById("styler1").style.display = "block";
+                    document.getElementById("styler2").src = imageshown7;
+
+                    document.getElementById("hairtype").innerHTML = "Your Hairtype is: " + hairtype +".";
+                    document.getElementById("Porosity").innerHTML = "Your have " + porosity +" hair.";
+                    document.getElementById("Density").innerHTML = "Your Hair Density is: " + density +".";
+                    document.getElementById("fineness").innerHTML = "Your have " + fineness + " hair.";
+
+
+                 }
+
+                 function loadImg(img) {
+  
+                        img.css('display', 'block');
+                }
+        </script>
+        <div class="aligned">
+            <p >Based on your hairtype, we believe these shampoos would work best</p>
+            <img class = "hideme" id="shampoo1" >
+            <img class = "hideme" id="shampoo2" >
+            <img class = "hideme" id="shampoo3" >
+            <p>Based on your hairtype, we believe these conditioners would work best</p>
+            <img class = "hideme" id="conditioner1" >
+            <img class = "hideme" id="conditioner2" >
+            <img class = "hideme" id="conditioner3" >
+            <p>Styler</p>
+            <img class = "hideme" id="styler1" >
+            <img class = "hideme" id="styler2" >
+            <img class = "hideme" id="styler3" >
+            <img class = "hideme" id="styler4" >
+            <img class = "hideme" id="styler5" >
+            <img class = "hideme" id="styler6" >
+            <img class = "hideme" id="styler7" >
+            <img class = "hideme" id="styler8" >
+            <img class = "hideme" id="styler9" >
+            <p class="title2">Your curl ID</p>
+        </div>
+
+
+
+
+        <div id="hairtype">
+
+        </div> 
+        
+        <img class = "hideme" id="Porosity1" >
+
+        <div id="Porosity">
+            
+        </div>
+
+
+        <img class = "hideme" id="Density1" width="107" height="98">
+        <div id="Density">
+            
+
+        </div>
+
+        <img class = "hideme" id="highlight1"  width="107" height="98">
+
+        <div id="highlight">
+              
+          
+        </div>
+
+        <img class = "hideme" id="fineness1" width="107" height="98">
+        <div id="fineness">
+              
+            
+        </div>
+
+        <img  class = "hideme" id="six1" width="107" height="98">
+        <div id="six">
+              
+            
+        </div>
+        <img class = "hideme" id="need1" width="107" height="98">  
+        <div id="need">
+              
+
+        </div>
+        <p class="quiz-description">Disclaimer: We are not sponsored by any of the brands shown above nor do we have any type of affiliation. <br> We made these sugesstions purely based on research!</p>
+        <a href="curly-quiz-page1.html"><button class="button button5"><p class="reg-text">Retake Quiz</p></button></a>
+        <footer>
+            <p>Planet Curls 2022 Ⓒ</p>
+        </footer>
+    </body>
+</html>

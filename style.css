@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+  * 
+  {
+    margin: 0;
+    padding: 0;
+
+  }
+  body
+  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: 25px !important; 
+  }
+  #nav-bar
+  {
+     position : sticky;
+     top: 0;
+     z-index: 10;
+
+  }
+  .space
+  {
+    margin: 40px;
+  }
+  .navbar
+  {
+    background-image:linear-gradient(to right,#ffffff, #ffffff)
+  }
+  .navbar-brand 
+  {
+     height: 80px;
+     padding-left: 40px;
+     font-size: 60px !important;
+     font-family: fantasy, Papyrus;
+  }
+
+  .navbar-nav li 
+  {
+    padding: 0 10px;
+  }
+  .navbar-nav li a
+  {
+    color: #000000 !important;
+    font-weight: 600;
+
+  }
+  .navbar-toggler
+  {
+    outline: none !important;
+  }   
+
+  /*--------banner section--------*/
+
+  #banner 
+  {
+    background-image: linear linear-gradient(to right, #ffffff, #ffffff);
+    color:#000000;
+  }
+  .description
+  {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .indent
+  {
+    margin-left: 50px;
+  }
+
+  .title 
+  {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 450px;
+  }
+  .title2 
+  {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .details
+  {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 200px;
+    font-size: 20px;
+  }
+  .details2
+  {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 200px;
+    padding-top: 200px;
+    font-size: 20px;
+  }
+
+  .button {
+    transition-duration: 0.4s;
+  }
+
+  .reg-text
+  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 50px;
+    width: 250px;
+  }
+  #banner a 
+  {
+    color: yellow;
+    text-decoration: none;
+
+  }
+  .button
+  {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  .button:active {
+    background-color: #ffc108;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 50px;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 250px;
+  }
+
+  .button4
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 250px;
+  }
+
+  .button5
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 700px;
+    margin-bottom: 50px;
+  }
+  .button6
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+  }
+  .button-center
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+  }
+  .button-center:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+  .button2:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+  
+  .button3
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+  }
+  .button7
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+  .button8
+  {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc108;
+    border-radius: 50px;
+    margin-left: 900px;
+  }
+
+  .button6:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+  .button3:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+
+  .button1:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+  .button4:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+  .button5:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+
+  .button8:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+  .button7:hover {
+    background-color: #ffc108;
+    color: white;
+    border-radius: 50px;
+  }
+
+
+
+  #routine
+  {
+    padding: 100px;
+  }
+  .columns 
+  {
+    float: left;
+    column-count: 4;
+    column-rule: 1px dotted #ffc108;
+    padding-bottom: 20px;
+  }
+  .column3
+  {
+    float: left;
+    align-items: center;
+    column-count: 2;
+    height: 300px;
+    margin-right: 100px;
+    margin-left:100px;
+    margin-top: 80px;
+  }
+
+  #information
+  {
+    padding: 120px;
+  }
+  .info
+  {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container2 img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-left: 600px;
+
+  }
+  .column1 
+  {
+    float: left;
+    column-count: 2;
+    height: 400px;
+    margin-left: 200px;
+    margin-top: 190px;
+  }
+  .column2 
+  {
+    float: left;
+    column-count: 2;
+    height: 400px;
+    margin-left: 300px;
+    margin-top: 190px;
+  }
+
+  #question1
+  {
+    padding: 20px;
+  }
+
+  .container1 
+  {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 54%;
+    margin: 30px;
+  }
+
+  .quiz-title
+  {
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .quiz-description
+  {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  hr
+  {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 12px;
+    background: yellow;
+    margin-bottom: 50px;
+  }
+  #question-pic1
+  {
+    padding: 30px;
+  }
+  .column2 
+  {
+    float: left;
+    align-items: center;
+    column-count: 3;
+    height: 200px;
+    margin-right: 200px;
+    margin-left:270px;
+    margin-top: 80px;
+  }
+  
+  .text-column
+  {
+    float: left;
+    align-items: center;
+    column-count: 2;
+  }  
+
+
+  :root {
+      --white: #ffffff;
+      --light: #f0eff3;
+      --black: #000000;
+      --dark-blue: #1f2029;
+      --dark-light: #353746;
+      --red: #da922c;
+      --yellow: #f8ab37;
+      --grey: #ecedf3;
+  }
+  
+  /* #Primary buttons
+  ================================================== */
+  
+  .checkbox:checked ~ .background-color{
+      background-color: var(--white);
+  }
+  
+  
+  [type="checkbox"]:checked,
+  [type="checkbox"]:not(:checked),
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked){
+      position: absolute;
+      left: -9999px;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+  }
+  .checkbox:checked + label,
+  .checkbox:not(:checked) + label{
+      position: relative;
+      width: 70px;
+      display: inline-block;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+      margin: 17px 0;
+      margin-top: 100px;
+      height: 6px;
+      border-radius: 4px;
+      background-image: linear-gradient(298deg, var(--red), var(--yellow));
+      z-index: 100 !important;
+  }
+  .checkbox:checked + label:before,
+  .checkbox:not(:checked) + label:before {
+      position: absolute;
+      cursor: pointer;
+      top: -17px;
+      z-index: 2;
+      font-size: 15px;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+  }
+  .checkbox:not(:checked) + label:before {
+      content: '\eac1';
+      left: 0;
+      color: var(--grey);
+      background-color: var(--dark-light);
+      box-shadow: 0 4px 4px rgba(0,0,0,0.15), 0 0 0 1px rgba(26,53,71,0.07);
+  }
+  .checkbox:checked + label:before {
+      content: '\eb8f';
+      left: 30px;
+      color: var(--yellow);
+      background-color: var(--dark-blue);
+      box-shadow: 0 4px 4px rgba(26,53,71,0.25), 0 0 0 1px rgba(26,53,71,0.07);
+  }
+  
+  .checkbox:checked ~ .section .container .row .col-12 p{
+      color: var(--dark-blue);
+  }
+  
+  
+  .checkbox-tools:checked + label,
+  .checkbox-tools:not(:checked) + label{
+      position: relative;
+      display: inline-block;
+      padding: 20px;
+      line-height: 30px;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      color: var(--white);
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+  }
+  .checkbox-tools:not(:checked) + label{
+      background-color: var(--dark-light);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  .checkbox-tools:checked + label{
+      background-color: transparent;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .checkbox-tools:not(:checked) + label:hover{
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .checkbox-tools:checked + label::before,
+  .checkbox-tools:not(:checked) + label::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      background-image: linear-gradient(298deg, var(--red), var(--yellow));
+      z-index: -1;
+  }
+  .checkbox-tools:checked + label .uil,
+  .checkbox-tools:not(:checked) + label .uil{
+      font-size: 24px;
+      line-height: 24px;
+      display: block;
+      padding-bottom: 10px;
+  }
+  
+  .checkbox:checked ~ .section .container .row .col-12 .checkbox-tools:not(:checked) + label{
+      background-color: var(--light);
+      color: var(--dark-blue);
+      box-shadow: 0 1x 4px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  
+  .checkbox-booking:checked + label,
+  .checkbox-booking:not(:checked) + label{
+      position: relative;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      text-align: center;
+      padding: 0;
+      padding: 6px 25px;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      margin-left: 6px;
+      margin-right: 6px;
+      margin-bottom: 16px;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      color: var(--white);
+      background-color: var(--dark-light);
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+  }
+  .checkbox-booking:not(:checked) + label::before{
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  .checkbox-booking:checked + label::before{
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .checkbox-booking:not(:checked) + label:hover::before{
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .checkbox-booking:checked + label::before,
+  .checkbox-booking:not(:checked) + label::before{
+      position: absolute;
+      content: '';
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 4px;
+      z-index: -2;
+      background-image: linear-gradient(138deg, var(--red), var(--yellow));
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+  }
+  .checkbox-booking:not(:checked) + label::before{
+      top: -1px;
+      left: -1px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+  }
+  .checkbox-booking:checked + label::after,
+  .checkbox-booking:not(:checked) + label::after{
+      position: absolute;
+      content: '';
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 4px;
+      z-index: -2;
+      background-color: var(--dark-light);
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+  }
+  .checkbox-booking:checked + label::after{
+      opacity: 0;
+  }
+  .checkbox-booking:checked + label .uil,
+  .checkbox-booking:not(:checked) + label .uil{
+      font-size: 20px;
+  }
+  .checkbox-booking:checked + label .text,
+  .checkbox-booking:not(:checked) + label .text{
+      position: relative;
+      display: inline-block;
+      -webkit-transition: opacity 300ms linear;
+      transition: opacity 300ms linear;
+  }
+  .checkbox-booking:checked + label .text{
+      opacity: 0.6;
+  }
+  .checkbox-booking:checked + label .text::after,
+  .checkbox-booking:not(:checked) + label .text::after{
+      position: absolute;
+      content: '';
+      width: 0;
+      left: 0;
+      top: 50%;
+      margin-top: -1px;
+      height: 2px;
+      background-image: linear-gradient(138deg, var(--red), var(--yellow));
+      z-index: 1;
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+  }
+  .checkbox-booking:not(:checked) + label .text::after{
+      width: 0;
+  }
+  .checkbox-booking:checked + label .text::after{
+      width: 100%;
+  }
+  
+  .checkbox:checked ~ .section .container .row .col-12 .checkbox-booking:not(:checked) + label,
+  .checkbox:checked ~ .section .container .row .col-12 .checkbox-booking:checked + label{
+      background-color: var(--light);
+      color: var(--dark-blue);
+  }
+  .checkbox:checked ~ .section .container .row .col-12 .checkbox-booking:checked + label::after,
+  .checkbox:checked ~ .section .container .row .col-12 .checkbox-booking:not(:checked) + label::after{
+      background-color: var(--light);
+  }
+  
+  .link-to-page {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 20000;
+      cursor: pointer;
+      width: 50px;
+  }
+  .link-to-page img{
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+  #mission
+  {
+    padding: 10px;
+  }
+  .container
+  {
+    margin-bottom: 80px;
+  }
+
+  .big-font
+  {
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-left: 50px;
+  }
+  /*------footer----------*/
+  footer 
+  {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+  }
+
+  --------------------------------
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container1 
+  {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 30px;
+  }
+
+
+  .steps {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+  .step {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #ACACA6;
+    border-radius: 50%;
+    transition: background 1s;
+    margin-top: 85px;
+  }
+  .step.selected {
+    border: 2px solid #dacc33;   
+  }
+  .step.completed {
+    border: 2px solid #dacc33;
+    background: #dacc33; 
+  }
+  .progress {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    border-bottom: 2px solid #ACACA6;
+    z-index: -1;
+    margin-top: 85px;
+  }
+  .percent {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #dacc33;
+    z-index: 1;
+    transition: width 1s;
+  }
+
+  .container1 {
+    margin: 60px auto;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .container1 .progress {
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  .progress {
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar {
+    height: 16px;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  /*
+   * Note: using adjacent or general sibling selectors combined with
+   *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+   *       See this article for more info and a potential fix:
+   *       https://css-tricks.com/webkit-sibling-bug/
+   */
+  
+  #five:checked ~ .progress > .progress-bar {
+    width: 5%;
+    background-color: #ff2f00;
+  }
+  
+  #twentyfive:checked ~ .progress > .progress-bar {
+    width: 25%;
+    background-color: #f87211;
+  }
+  
+  #fifty:checked ~ .progress > .progress-bar {
+    width: 50%;
+    background-color: #feb925;
+  }
+  
+  #seventyfive:checked ~ .progress > .progress-bar {
+    width: 75%;
+    background-color: #ffde26;
+  }
+  
+  #onehundred:checked ~ .progress > .progress-bar {
+    width: 100%;
+    background-color: #9cff2c;
+  }
+  
+  .radio {
+    display: none;
+  }
+  
+  .label {
+    display: inline-block;
+    margin: 0 5px 20px;
+    padding: 3px 8px;
+    color: #aaa;
+    text-shadow: 0 1px black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .radio:checked + .label {
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+  }
+  
+  .container2{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .progressbar2 li{
+    float: left;
+    width: 20%;
+    position: relative;
+    text-align: center;
+  }
+  [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 10px solid #f00;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 50px 100px;
+    margin-left: 45%;
+  }
+
+  .hideme {
+    display: none;
+  }
+  .aligned
+  {
+    object-position: center;
+  }
+
+  #results
+  {
+    padding: 20px;
+  }
+  .aligned
+  {
+    object-position: center;
+  }

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>
+            Planet Curls
+        </title>
+        <link rel="stylesheet" href="style.css"> 
+        <!-- CSS only -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" rel="stylesheet"> 
+        </title>
+    </head>
+    <body>
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="80"> Planet Curls</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="ms-auto navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <div class="section over-hide z-bigger">
+            <div class="container pb-5">
+                <div class="row justify-content-center pb-5">
+                    <div class="quiz-description">
+                        <p>Which best describes the result you want from your stylers?</p>
+                    </div>
+                    <input class="checkbox-tools" type="radio" name="tools" id="tool-1" value="soft" onchange="changeId()">
+                    <label class="for-checkbox-tools" for="tool-1">
+                        <i class='uil uil-line-alt'></i>
+                        Soft hold, I only want gently enhance my natural texture
+                    </label><!--
+                    --><input class="checkbox-tools" type="radio" name="tools" id="tool-2" value="volume" onchange="changeId()">
+                    <label class="for-checkbox-tools" for="tool-2">
+                        <i class='uil uil-vector-square'></i>
+                        Volume and beach look vibe
+                    </label><!--
+                    --><input class="checkbox-tools" type="radio" name="tools" id="tool-3" value="light" onchange="changeId()">
+                    <label class="for-checkbox-tools" for="tool-3">
+                        <i class='uil uil-ruler'></i>
+                        Light, flexible hold and frizz control
+                    </label><!--
+                    --><input class="checkbox-tools" type="radio" name="tools" id="tool-4" value="medium" onchange="changeId()">
+                    <label class="for-checkbox-tools" for="tool-4">
+                        <i class='uil uil-crop-alt'></i>
+                        Medium hold, moisture and frizz control
+                    </label><!--
+                    --><input class="checkbox-tools" type="radio" name="tools" id="tool-5" value="strong" onchange="changeId()">
+                    <label class="for-checkbox-tools" for="tool-5">
+                        <i class='uil uil-crop-alt'></i>
+                        Strong hold and frizz control, the stronger the better
+                    </label>
+                    </div>
+            </div>	
+        </div>
+        <script>
+            localStorage.setItem("checkedvalue6", null);
+            function changeId() {
+                var ele =document.querySelector('input[name="tools"]:checked');    
+                localStorage.setItem("checkedvalue6", ele.value);    
+            }
+        
+            function myFunction() {
+                const checked6 = localStorage.getItem("checkedvalue6");
+                if (checked6 === "null") {
+                    alert("Please select an option before proceeding"); 
+                }
+                else {
+                    window.location ="./curly-quiz-page7.html" 
+                }
+            }
+        
+        </script>
+        <a href="curly-quiz-page5.html"><button class="button button4" type="submit" id="submitBtn">Previous</button></a>
+        <button onclick = "myFunction()" class="button button5" type="submit" id="submitBtn">Next</button>  
+        <footer>
+            <p>Planet Curls 2022 Ⓒ</p>
+        </footer>
+    </body>
+</html>
+    
